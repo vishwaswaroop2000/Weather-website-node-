@@ -1,4 +1,3 @@
-console.log("CLient side JS is running")
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
