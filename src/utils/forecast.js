@@ -9,7 +9,7 @@ const forecast = (longitude, latitude, callback) => {
     else if (body.error)
       callback('Unable to find loaction', undefined) // executes whatever function sent as parameter
     else
-      callback(undefined, body.daily.data[0].summary + " It is currently " + body.currently.apparentTemperature + " degrees Celcius out. There is a " + body.currently.precipProbability + "% of rain.")
+      callback(undefined, body.daily.data[0].summary + " It is currently " + body.currently.apparentTemperature + " degrees Celcius out. There is a " + body.currently.precipProbability + "% of rain. The highest temperature should not exceed " + body.daily.data[0].tempeartureMax + " degrees Celcius. The lowest temperature should not be below " + body.daily.data[0].temperatureMin + " degree Celcius. If its more, its because you cut all the trees and caused global warming you IDIOT!")
   })
 }
 
